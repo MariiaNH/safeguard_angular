@@ -1,0 +1,9 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 21px 0 26px;
+
+  @include on-desktop {
+    padding: 0;
+  }
+}

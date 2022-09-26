@@ -1,0 +1,91 @@
+<form
+  class="contact-us__form form"
+  action="#"
+  method="get"
+>
+  <div class="form__control">
+    <label
+      for="name"
+      class="form__label"
+    >
+      Full name
+    </label>
+    <input
+      class="form__field form__field--name"
+      type="text" id="name"
+      formControlName="name"
+    >
+    <div class="form__validation">
+      Full Name is required
+    </div>
+  </div>
+
+  <div class="form__control form__control--company">
+    <label class="form__label" for="company">Company Name</label>
+    <input
+      class="form__field form__field--company"
+      type="text"
+      id="company"
+      formControlName="company"
+    >
+  </div>
+
+  <div class="form__control form__control--phone">
+    <label
+      class="form__label"
+      for="phone"
+    >
+      Phone Number
+    </label>
+    <input
+      class="form__field form__field--phone"
+      type="tel"
+      id="phone"
+      formControlName="number"
+    >
+    <div class="form__validation">
+      Phone Number is invalid
+    </div>
+  </div>
+
+  <div class="form__control form__control--email">
+    <label
+      class="form__label"
+      for="email"
+    >
+      E-mail
+    </label>
+    <input
+      class="form__field form__field--email"
+      type="email"
+      id="email"
+      formControlName="email"
+    >
+    <div class="form__validation">
+      Email is invalid
+    </div>
+  </div>
+
+  <div class="form__control form__control--message">
+    <label class="form__label" for="review">
+      Write Us Messages
+    </label>
+    <textarea
+      class="form__field form__field--textarea"
+      cols="30" rows="5"
+      type="text"
+      id="review"
+      formControlName="message"
+    >
+    </textarea>
+
+  </div>
+
+  <button
+    class="form__submit button"
+    type="submit"
+    title="Fill the form correctly and send"
+  >
+    Send Message
+  </button>
+</form>

@@ -1,0 +1,99 @@
+@import '../../STYLES/UTILS/mixins';
+@import '../../STYLES/UTILS/vars';
+
+
+.menu {
+  background-color: $accent-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: block;
+
+  transform: translateX(-100%);
+
+  &:target {
+    transform: translateX(0);
+  }
+
+  @include on-desktop {
+    display: none;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 41px 0 0;
+
+    @include on-desktop {
+      padding: 48px 0 0;
+    }
+  }
+
+  &__logo {
+    display: block;
+    padding: 0;
+    width: 162px;
+    height: 35px;
+  }
+
+  &__nav {
+    display: block;
+  }
+
+  &__cross {
+    color: black;
+  }
+
+  &__list {
+    margin: 56px 0 0;
+    padding-left: 6px;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  &__item {
+    padding-bottom: 28px;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:last-child {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__services {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    list-style: none;
+    padding-left: 6px;
+    margin: 0;
+  }
+
+  &__title {
+    padding-bottom: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.5;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 21px 0 26px;
+}

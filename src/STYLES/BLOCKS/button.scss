@@ -1,0 +1,21 @@
+@import '../UTILS/vars';
+
+.button {
+  width: 176px;
+  height: 65px;
+  background: #ffffff;
+  color: $colorLightBlack;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid transparent;
+  border-radius: 16px;
+
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

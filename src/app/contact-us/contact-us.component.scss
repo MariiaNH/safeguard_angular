@@ -1,0 +1,65 @@
+@import '../../STYLES/UTILS/vars';
+@import '../../STYLES/UTILS/mixins';
+
+@import '../../STYLES/BLOCKS/section.scss';
+@import '../../STYLES/BLOCKS/link.scss';
+@import '../../STYLES/BLOCKS/container.scss';
+@import '../../STYLES/BLOCKS/burger.scss';
+@import '../../STYLES/BLOCKS/button.scss';
+
+.contact-us {
+  padding: 25px 0 71px;
+
+  @include on-desktop {
+    padding: 85px 0 71px;
+  }
+
+  &__form-field {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+  }
+
+  &__title {
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    margin: 0 0 12px;
+    font-size: 32px;
+    line-height: 48px;
+
+    @include on-desktop {
+      font-size: 50px;
+      line-height: 75px;
+      margin-bottom: 31px;
+      text-shadow: $shadow;
+    }
+
+    &--accent {
+      color: $accent-color;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__arrow-container {
+    @include on-desktop {
+      margin-top: -85px;
+      margin-right: -119px;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    margin-right: 0;
+      width: 30px;
+      height: 30px;
+
+    @include on-desktop {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

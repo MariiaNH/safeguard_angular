@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 14px;
+  border-radius: 12px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: white;
+    box-shadow: $shadow;
+  }
+}

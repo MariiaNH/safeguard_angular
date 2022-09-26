@@ -1,0 +1,32 @@
+@import '../../STYLES/UTILS/vars';
+@import '../../STYLES/UTILS/mixins';
+
+.navigation {
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    &-contact {
+      background: $colorWight;
+      border-radius: 12px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+  }
+}

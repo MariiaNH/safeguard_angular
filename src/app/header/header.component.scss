@@ -1,0 +1,71 @@
+@import '../../STYLES/UTILS/vars';
+@import '../../STYLES/UTILS/mixins';
+
+
+
+@import '../../STYLES/BLOCKS/section.scss';
+@import '../../STYLES/BLOCKS/link.scss';
+@import '../../STYLES/BLOCKS/container.scss';
+@import '../../STYLES/BLOCKS/burger.scss';
+@import '../../STYLES/BLOCKS/button.scss';
+
+.header {
+  background-color: $accent-color;
+  height: 100vh;
+  overflow: hidden;
+
+  &__nav {
+    display: none;
+
+    @include on-laptop {
+      display: flex;
+    }
+  }
+
+  &__item {
+    gap: 22px;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+    @include on-laptop {
+      display: flex;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 41px 0 0;
+
+    @include on-desktop {
+      padding: 48px 0 0;
+    }
+  }
+
+  &__logo {
+    display: block;
+    padding: 0;
+    width: 162px;
+    height: 35px;
+
+    @include on-desktop {
+      width: 194px;
+      height: 42px;
+    }
+  }
+
+  &__menu {
+    display: block;
+
+    @include on-laptop {
+      display: none;
+    }
+  }
+}
