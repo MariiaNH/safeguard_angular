@@ -3,124 +3,22 @@
 @import '../../STYLES/BLOCKS/button.scss';
 
 .form {
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
-  border-radius: 30px;
-  padding: 24px 24px 28px;
+  max-width: 510px;
 
-  @include on-desktop {
+
+  &__container {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    padding: 25px;
+
+    @include onLaptop {
+      padding: 60px;
+    }
+  }
+
+  @include onDesktop {
     padding: 51px 60px 71px 60px;
     margin: 0 auto;
-  }
-
-  &__control {
-    position: relative;
-    margin-bottom: 20px;
-
-    @include on-desktop {
-      margin-bottom: 30px;
-    }
-
-    &--company {
-      margin-bottom: 20px;
-
-      @include on-desktop {
-        margin-bottom: 61px;
-
-      }
-    }
-
-    &--phone {
-      margin-bottom: 20px;
-
-      @include on-desktop {
-        margin-bottom: 36px;
-      }
-    }
-
-    &--email {
-      margin-bottom: 20px;
-
-      @include on-desktop {
-        margin-bottom: 71px;
-      }
-    }
-
-    &--message {
-      margin-bottom: 34px;
-
-      @include on-desktop {
-        margin-bottom: 50px;
-      }
-    }
-  }
-
-  &__label {
-    display: block;
-    font-size: 12px;
-    color: #999999;
-
-    &--invalid {
-      color: red;
-    }
-  }
-
-  &__field {
-    padding: 0;
-    text-indent: 10px;
-    width: 511px;
-    height: 37px;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 21px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: transparent;
-    width: 100%;
-
-    @include on-tablet {
-      width: 50%;
-    }
-
-    &--name {
-      height: 37px;
-
-      @include on-desktop {
-        height: 36px;
-      }
-    }
-
-    &--company {
-      height: 37px;
-    }
-
-    &--phone {
-      height: 37px;
-
-      @include on-desktop {
-        height: 27px;
-      }
-    }
-
-    &--email {
-      height: 37px;
-
-      @include on-desktop {
-        height: 29px;
-      }
-    }
-
-    &--textarea {
-      resize: none;
-      height: 37px;
-      line-height: 14px;
-      border: none;
-
-      @include on-desktop {
-        height: 145px;
-        line-height: 28.8px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-      }
-    }
   }
 
   &__submit {
@@ -130,7 +28,7 @@
     font-family: inherit;
     font-weight: 500;
     cursor: pointer;
-    background-color: $accent-color;
+    background-color: $colorYellow;
     border: none;
     border-radius: 16px;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -142,20 +40,26 @@
     font-size: 14px;
     line-height: 16px;
 
-    @include on-desktop {
+    @include onDesktop {
       display: inline-block;
       font-size: 16px;
       line-height: 18px;
     }
   }
 
-  &__validation {
-    position: absolute;
-    font-size: 12px;
-    color: red;
-  }
 }
 
-input.ng-invalid.ng-touched {
-  border-bottom: red 1px solid;
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-us__form-field {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @include onLaptop {
+    margin-bottom: 40px;
+  }
 }

@@ -5,17 +5,17 @@
   width: 30px;
   height: 19px;
 
-  @include on-tablet {
+  @include onPad {
     display: block;
     width: 30px;
     height: 19px;
   }
 
-  @include on-laptop {
+  @include onLaptop {
     display: none;
   }
 
-  @include on-desktop {
+  @include onDesktop {
     display: none;
   }
 }

@@ -10,14 +10,18 @@
 @import '../../STYLES/BLOCKS/button.scss';
 
 .header {
-  background-color: $accent-color;
+  background-color: $colorYellow;
   height: 100vh;
   overflow: hidden;
+
+  @include onLaptop {
+    height: auto;
+  }
 
   &__nav {
     display: none;
 
-    @include on-laptop {
+    @include onLaptop {
       display: flex;
     }
   }
@@ -28,7 +32,7 @@
     margin: 0;
     display: none;
 
-    @include on-laptop {
+    @include onLaptop {
       display: flex;
     }
   }
@@ -44,7 +48,7 @@
     height: 50px;
     padding: 41px 0 0;
 
-    @include on-desktop {
+    @include onDesktop {
       padding: 48px 0 0;
     }
   }
@@ -55,7 +59,7 @@
     width: 162px;
     height: 35px;
 
-    @include on-desktop {
+    @include onDesktop {
       width: 194px;
       height: 42px;
     }
@@ -64,7 +68,7 @@
   &__menu {
     display: block;
 
-    @include on-laptop {
+    @include onLaptop {
       display: none;
     }
   }

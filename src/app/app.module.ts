@@ -8,6 +8,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsFormComponent } from './contact-us-form/contact-us-form.component';
 import { MenuComponent } from './menu/menu.component';
+import {MatInputModule} from '@angular/material/input';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,14 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,16 +1,16 @@
-@mixin on-tablet {
+@mixin onPad {
   @media (min-width: 768px) {
     @content
   }
 }
 
-@mixin on-laptop {
+@mixin onLaptop {
   @media (min-width: 1024px) {
     @content
   }
 }
 
-@mixin on-desktop {
+@mixin onDesktop {
   @media (min-width: 1920px) {
     @content
   }

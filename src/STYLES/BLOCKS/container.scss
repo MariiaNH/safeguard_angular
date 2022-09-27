@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 21px 0 26px;
 
-  @include on-desktop {
+  @include onDesktop {
     padding: 0;
   }
 }

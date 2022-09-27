@@ -1,12 +1,12 @@
 .section {
   padding: 65px 0 0;
 
-  @include on-tablet {
+  @include onPad {
     display: flex;
     justify-content: space-between;
   }
 
-  @include on-desktop {
+  @include onDesktop {
     display: flex;
     justify-content: space-between;
     padding: 178px 0 0;
@@ -19,19 +19,19 @@
     height: 313px;
     margin-right: 0;
 
-    @include on-tablet {
+    @include onPad {
       margin: -20px -340px 0;
       width: 564px;
       height: 442px;
     }
 
-    @include on-laptop {
+    @include onLaptop {
       margin: -20px -240px 0;
       width: 655px;
       height: 513px;
     }
 
-    @include on-desktop {
+    @include onDesktop {
       margin: -75px -340px 0;
       width: 826px;
       height: 647px;
@@ -43,7 +43,7 @@
     margin: 0 0 0;
     padding-top: 0;
 
-    @include on-desktop {
+    @include onDesktop {
       margin: 0 0 63px;
     }
   }
@@ -55,7 +55,7 @@
     margin: 0 0 30px;
     font-size: 14px;
 
-    @include on-desktop {
+    @include onDesktop {
       width: 560px;
       margin: 0 0 63px;
       font-size: 18px;
@@ -71,12 +71,12 @@
     font-size: 42px;
     text-shadow: none;
 
-    @include on-tablet {
+    @include onPad {
       margin: 0 0 33px 0;
       font-size: 55px;
     }
 
-    @include on-desktop {
+    @include onDesktop {
       margin: 0 0 33px -81px;
       font-size: 68px;
       text-shadow: $shadow;
@@ -97,7 +97,7 @@
     font-size: 14px;
     box-shadow: none;
 
-    @include on-desktop {
+    @include onDesktop {
       width: 176px;
       height: 65px;
       margin-bottom: 65px;
