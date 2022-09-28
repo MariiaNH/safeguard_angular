@@ -10,6 +10,7 @@
 @import '../../STYLES/BLOCKS/button.scss';
 
 .header {
+  position: relative;
   background-color: $colorYellow;
   height: 100vh;
   overflow: hidden;
