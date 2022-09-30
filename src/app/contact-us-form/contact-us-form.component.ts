@@ -22,8 +22,8 @@ export class ContactUsFormComponent implements OnInit {
   }
 
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  phoneFormControl = new FormControl('', [Validators.required, Validators.email]);
-  nameFormControl = new FormControl('', [Validators.required, Validators.email]);
+  phoneFormControl = new FormControl('', [Validators.required]);
+  nameFormControl = new FormControl('', [Validators.required]);
 
   matcher = new MyErrorStateMatcher();
 
