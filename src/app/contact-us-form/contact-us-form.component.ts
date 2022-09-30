@@ -21,9 +21,7 @@ export class ContactUsFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  phoneFormControl = new FormControl('', [Validators.required]);
-  nameFormControl = new FormControl('', [Validators.required]);
+git pul
 
   matcher = new MyErrorStateMatcher();
 
